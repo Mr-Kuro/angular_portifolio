@@ -1,0 +1,191 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+:root{
+  --text-font: 'Montserrat', sans-serif;
+
+  --small-text-size: 12px;
+  --normal-text-size: 16px;
+  --big-text-size: 18px;
+  --subtitle-text-size: 22px;
+  --title-text-size: 36px;
+
+
+  --small-text-weight: 200;
+  --normal-text-weigth: 450;
+
+  --subtitle-text-weight: 600;
+  --title-text-weigth: 700;
+
+--ligth-primary-strong: #d0fadc ;
+--ligth-primary-middle: #dcfce5 ;
+--ligth-primary-smart:  #e7fdee ;
+--ligth-primary-clean:  #f3fef6 ;
+--ligth-primary-text:  #202124 ;
+
+--ligth-secondary-strong: #90c7a4  ;
+--ligth-secondary-middle: #bbffd4  ;
+--ligth-secondary-smart:  #d2ffe2 ;
+--ligth-secondary-clean:  #e8fff1 ;
+--ligth-secondary-text:  ##ffffff ;
+
+--black-primary-strong: #170015 ;
+--black-primary-middle: #451a42 ;
+--black-primary-smart:  #562653 ;
+--black-primary-clean:  #663364 ;
+--black-primary-text:  #fff ;
+
+--black-secondary-strong: #673365 ;
+--black-secondary-middle: #8d5d8b ;
+--black-secondary-smart:  #d9b1d8 ;
+--black-secondary-clean:  #ffdbff ;
+--black-secondary-text:  #ffffff ;
+}
+
+html,
+body {
+  line-height: 2rem;
+  height: 100vh;
+  text-align: center;
+  margin: 0;
+  font-family: var(--text-font) !important;
+  font-size: var(--normal-text-size) !important;
+  text-decoration: none ;
+  font-weight: var(--normal-text-weight);
+}
+
+.full_screen{
+  width: 100%;
+  height: 100vh;
+}
+
+ul, a{
+  text-decoration: none !important;
+  list-style: none !important;
+  text-align: center;
+  color:none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5rem;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+
+  flex-flow: row wrap;
+
+  width: 100%;
+
+  border-radius: 10px;
+  padding-top: 1.2rem;
+}
+
+.column{
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding: .75rem;
+}
+
+a{
+  color:darkorange !important;
+
+}
+a::after{
+  color:rgba(255, 225, 0, 0.839) !important;
+}
+
+a::before{
+  color:orange !important;
+}
+
+.ligth-primary{
+  background-color: var(--ligth-primary-smart) !important;
+  color: var(--ligth-text) !important;
+}
+
+.ligth-secondary{
+  background: var(--ligth-primary-strong) !important;
+  color: var(--ligth-secondary-text) !important;
+}
+
+.ligth-accent{
+  background: var(--ligth-secondary-middle) !important;
+  color: var(--ligth-secondary-text) !important;
+}
+
+
+.black-primary{
+  background-color: var(--black-primary-strong) !important;
+  color: var(--black-primary-text) !important;
+}
+
+.black-secondary{
+  background: var(--black-secondary-strong) !important;
+  color: var(--black-secondary-text) !important;
+}
+
+
+.black-accent{
+  background: var(--black-primary-middle) !important;
+  color: var(--black-secondary-text) !important;
+}
+
+
+
+.title{
+  font-family: var(--text-font) !important;
+  font-size: var(--title-text-size) !important;
+  font-weight: var(--title-text-weight) !important;
+  margin: 0 0 2rem;
+  /* color: var(--black-primary-smart) !important; */
+}
+
+.subtitle{
+  font-family: var(--text-font) !important;
+  font-size: var(--subtitle-text-size) !important;
+  font-weight: var(--subtitle-text-weight) !important;
+  margin: 1rem 0 2rem;
+  /* color: var(--black-secondary-middle) !important; */
+
+}
+
+.big-text{
+  font-family: var(--text-font) !important;
+  font-size: var(--big-text-size) !important;
+  font-weight: var(--normal-text-weight) !important;
+}
+
+.small-box{
+  width: 300px !important;
+}
+
+.avatar{
+  width: 70%;
+  border-radius: 50%;
+  margin: 2rem 0;
+}
+
+.logo{
+  width: 8rem;
+  border-radius: 50%;
+}
+
+.footer-icon{
+  font-size: 2.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+
+@keyframes opacity {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 60%;
+  }
+}
